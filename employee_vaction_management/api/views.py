@@ -1,11 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-# Create your views here.
-import io
+# Create your views here
 
 from rest_framework.response import Response
-from rest_framework.parsers import JSONParser
-from rest_framework.renderers import JSONRenderer
+
 from .models import employee,manager,days
 from .serializer import employeeserializer,managerserialiazer,daysserialiazer
 from rest_framework.decorators import api_view
